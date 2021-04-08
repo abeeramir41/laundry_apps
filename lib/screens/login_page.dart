@@ -212,6 +212,7 @@ class _LoginPageState extends State<LoginPage> {
         emailController.text, passwordController.text)
         .then((value) {
       if(value!=null) {
+
         return Navigator.pushReplacement(
             context,
             MaterialPageRoute(

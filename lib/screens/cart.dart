@@ -5,6 +5,7 @@ import 'package:laundry_apps/utils/color.dart';
 import 'package:laundry_apps/bnvscreens/home.dart';
 import 'package:laundry_apps/model/product.dart';
 import 'package:laundry_apps/screens/bnvmain.dart';
+import 'package:laundry_apps/model/washingmodel.dart';
 
 class Cart extends StatefulWidget{
   @override
@@ -17,26 +18,29 @@ class Cart extends StatefulWidget{
 class _CartState extends State<Cart>{
 
 
-  List<Product> items = [
-    Product(
+  List<Wash> items = [
+    Wash(
         image: 'assets/images/wash1.png',
         name: 'Wash & Iron',
         price: 2,
-        qty: 0
+        qty: 0,
+      parentcatrgory: 'Wash & Iron '
     ),
-    Product(
-        image:
-        'assets/images/iron1.png',
+    Wash(
+        image: 'assets/images/iron1.png',
         name: 'Ironing',
         price: 2,
-        qty: 0),
-    Product(
-        image:
-        'assets/images/dress.png',
-        name: 'Dress',
+        qty: 0,
+        parentcatrgory: 'Ironing '
+    ),
+    Wash(
+        image: 'assets/images/dry1.png',
+        name: 'Dry Cleaning',
         price: 2,
-        qty: 0),
-     ];
+        qty: 0,
+        parentcatrgory: 'Dry Cleaning '
+    ),
+       ];
 
   @override
   Widget build(BuildContext context) {

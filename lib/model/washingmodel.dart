@@ -1,14 +1,9 @@
-class Washing {
+class Wash{
+  String image;
+  String name;
+  int price;
+  int qty;
+  String parentcatrgory;
 
-  int tprice;
-  int cprice;
-  int dprice;
-  int sprice;
-  int tqty;
-  int cqty;
-  int  dqty;
-  int sqty;
-  String title;
-
-  Washing({this.title,this.cprice,this.dprice,this.sprice,this.tprice,this.tqty,this.cqty,this.dqty,this.sqty});
+  Wash({this.parentcatrgory,this.image, this.price, this.name,this.qty});
 }
