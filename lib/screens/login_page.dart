@@ -101,15 +101,24 @@ class _LoginPageState extends State<LoginPage> {
                         margin: EdgeInsets.only(top: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[ Container(
-                              margin: EdgeInsets.only(left: 30),
-                              child: Text("Sign In", style: TextStyle(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.bold,
-                                  fontFamily: 'Quicksand',
-                                  color: orangeColors
-                              ),),
-                            ),
+                          children: <Widget>[ InkWell(
+                            child: Container(
+                                margin: EdgeInsets.only(left: 30),
+                                child: Text("Sign In", style: TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Quicksand',
+                                    color: orangeColors
+                                ),),
+                              ),
+                            onTap: (){
+                              Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Bnvmain()
+                                  ));
+                            },
+                          ),
 
                             Container(
                               margin: EdgeInsets.only(right: 15),
@@ -212,7 +221,7 @@ class _LoginPageState extends State<LoginPage> {
         emailController.text, passwordController.text)
         .then((value) {
       if(value!=null) {
-
+Center(child: CircularProgressIndicator());
         return Navigator.pushReplacement(
             context,
             MaterialPageRoute(

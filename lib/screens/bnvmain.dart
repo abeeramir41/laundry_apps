@@ -67,8 +67,8 @@ class _BnvmainState extends State<Bnvmain>{
         ),
         BottomNavyBarItem(
 
-            icon: Icon(Icons.panorama_vertical_outlined,size: 22,),
-            title: Text("Voucher",style: TextStyle(
+            icon: Icon(Icons.all_inbox,size: 22,),
+            title: Text("Packages",style: TextStyle(
                 fontFamily: "Montserrat Medium",
                 color: orangeColors,
                 fontWeight: FontWeight.w600,

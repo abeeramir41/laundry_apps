@@ -180,7 +180,7 @@ class _CartState extends State<Cart>{
                 ),
                 Container(
                   width: double.infinity,
-                  height:MediaQuery.of(context).size.height*0.15 ,
+                  height:MediaQuery.of(context).size.height*0.16 ,
                   margin: EdgeInsets.only(left: 10,right: 10,top: 10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),

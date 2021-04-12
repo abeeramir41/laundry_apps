@@ -27,48 +27,44 @@ class _AddOrderState extends State<AddOrder> {
 
  List<Product> items = [
     Product(
-        image: 'assets/images/tshirt.png',
-        name: 'T-Shirt',
-        price: 2,
+        image: 'assets/images/blanket2.png',
+        name: 'Blanket',
+        price: 500,
         qty: 0
     ),
     Product(
         image:
-        'assets/images/coat.png',
-        name: 'Coat',
-        price: 2,
+        'assets/images/full.png',
+        name: 'Pant Coat Waistcoat',
+        price: 700,
+        qty: 0),
+   Product(
+       image:
+       'assets/images/overcoat2.png',
+       name: 'Long Coat',
+       price: 2,
+       qty: 0),
+    Product(
+        image:
+        'assets/images/jack.png',
+        name: 'Jacket',
+        price: 400,
         qty: 0),
     Product(
         image:
-        'assets/images/dress.png',
-        name: 'Dress',
-        price: 2,
+        'assets/images/wast2.png',
+        name: 'Waistcoat',
+        price: 250,
         qty: 0),
-    Product(
-        image:
-        'assets/images/sher.png',
-        name: 'Sherwani',
-        price: 2,
-        qty: 0)
+   Product(
+       image:
+       'assets/images/sher.png',
+       name: 'Sherwani',
+       price: 800,
+       qty: 0)
   ];
   final List<Wash> _userwashlist = [
-    Wash(
-        image: 'assets/images/tshirt.png',
-        name: 'T-Shirt',
-        price: 2,
-        parentcatrgory: 'Wash & Iron',
-        qty: 0
-    ),
-    Wash(
-        image:
-        'assets/images/coat.png',
-        name: 'Coat',
-        price: 2,
-        parentcatrgory: 'Wash & Iron',
-        qty: 0),
-
-
-  ];
+    ];
 
   @override
   Widget build(BuildContext context) {
